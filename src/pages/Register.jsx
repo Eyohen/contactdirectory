@@ -35,7 +35,16 @@ const Register = () => {
   };
 
   return (
+    <>
+    <div className='bg-green-200 p-4'>
+
+    <div className='text-right'>
+    <Link to={'/adminlogin'}><button className='text-white bg-green-600 px-6 rounded-md'>Admin</button></Link>
+      </div>
+        
     <div className='bg-green-200 py-24 flex justify-center items-center '>
+
+ 
 
       <div className='flex justify-center items-center max-w-[500px] py-2 bg-white px-64 rounded-2xl shadow-xl'>
     <form onSubmit={handleSubmit} >
@@ -74,7 +83,7 @@ const Register = () => {
       </div>
 
       <div className='py-6'>
-      <button className='bg-green-600 py-2 px-2 w-[450px] text-white shadow-xl rounded-md' type="submit">Register</button>
+      <button className='bg-green-600 py-2 px-2 w-[450px] text-white shadow-xl rounded-md' type="submit">Add Contact</button>
       </div>
       <p className='text-center'>Already registered?</p>
       <div className='py-3'>
@@ -86,6 +95,10 @@ const Register = () => {
 
 
     </div>
+
+
+    </div>
+    </>
   );
 };
 
